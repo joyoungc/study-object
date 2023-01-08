@@ -1,5 +1,8 @@
 package study.object.ticket;
 
+import lombok.Getter;
+
+@Getter
 public class Bag {
 
     private Long amount;
