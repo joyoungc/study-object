@@ -3,7 +3,7 @@ package study.object.reservation.discount;
 import study.object.reservation.Money;
 import study.object.reservation.Screening;
 
-public class AmountDiscountPolicy extends DiscountPolicy {
+public class AmountDiscountPolicy extends DefaultDiscountPolicy {
     private Money discountAmount;
 
     public AmountDiscountPolicy(Money discountAmount, DiscountCondition... conditions) {

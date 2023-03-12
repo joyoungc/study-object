@@ -5,6 +5,10 @@ import java.math.BigDecimal;
 public class Money {
     public static final Money ZERO = Money.wons(0);
 
+    public BigDecimal getAmount() {
+        return amount;
+    }
+
     private final BigDecimal amount;
 
     public Money(BigDecimal amount) {
