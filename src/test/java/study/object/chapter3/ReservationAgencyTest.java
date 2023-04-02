@@ -33,9 +33,7 @@ class ReservationAgencyTest {
         movie.setDiscountConditions(List.of(condition));
 
         // Screening
-        Screening screening = new Screening();
-        screening.setMovie(movie);
-        screening.setWhenScreened(LocalDateTime.of(2023,1,3,10,30));
+        Screening screening = new Screening(movie, 2, LocalDateTime.of(2023,4,3,10,30));
 
         // Customer
         Customer customer = new Customer("Aiden", "1");
